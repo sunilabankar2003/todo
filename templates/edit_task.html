@@ -33,7 +33,7 @@
   <body>
     <div class="container">
       <h3 class="pt-5 pb-5 text-center">Django TODO App - Edit Task</h3>
-      <form action="{% url 'edit_task' get_task.pk %}" method="POST" style="width: 500px; margin:auto">
+      <form action="{% url 'edit_task' get_task.pk %}" method="POST" style="width: 80%; margin:auto">
         {% csrf_token %}
         <div class="form-group">
           <span style="display: flex">
@@ -43,7 +43,7 @@
               class="form-control"
               placeholder="Edit the task" value="{{get_task.task}}"
             />
-            <button type="submit" class="btn btn-warning" style="width: 200px">
+            <button type="submit" class="btn btn-warning " style="width: 200px;">
               <i class="fa fa-plus"></i> Update
             </button>
           </span>
